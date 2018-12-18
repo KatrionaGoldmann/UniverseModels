@@ -1,8 +1,9 @@
 # UniverseModels
 Models to describe the evolution of the universe using EFT, dark energy and modified gravity theories. This repo contains four subfolders:
 
-* ### UniverseModels
-  This folder contains the necessary algorithms to model the background energy for any flat universe. This has been written in a Python notebook, therefore in order to open it you will need to have iPython installed (see http://ipython.org/install.html for more detail). However a python script of the code has also been included.
+* ### BackgroundEnergy
+  This has been written in a Python notebook, therefore in order to open it you will need to have iPython installed (see http://ipython.org/install.html for more detail). Firstly, the background energy for a flat universe was modelled for a matter only, vacuum energy only and ΛCDM case (Einstein-de Sitter, deThis folder contains the necessary algorithms to model the background energy for any flat universe.  Sitter and concordance model respectively). This was done by evolving the Friedmann equation discretely as described. These theoretical results were compared to the analytical expansion. The errors were then found by calculating the difference between these methods at each time-step. These computations were conducted using a time-step of ∆t = 0.001Gyr and a system run for 20,000 iterations.
+
   * This only contains one script: WokingAndNomalised.ipynb, which when run plots the evolving scale factor with time and computational error.
 
 * ### MinimizingEFT 
