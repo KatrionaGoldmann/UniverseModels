@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 class EFT(object):
 
-    # Initial conditions for the universe. 
+    # Initial conditions for the universe.
     def __init__(self, omega_m, omega_phi, H0, a0, t0, iterations, dt):
         self.omega_m = omega_m
         self.omega_phi = omega_phi
@@ -13,9 +13,9 @@ class EFT(object):
         self.H0 = H0
         self.a0 = a0
         self.it = iterations
-        self.file = file
-        self.t = np.arange(t0, t0 + iterations*dt, dt) 
-        
+        #self.file = file
+        self.t = np.arange(t0, t0 + iterations*dt, dt)
+
    # Concordence model: inferred solution for Lambda-CDM.
     def BackgroundTheory(self):
         avals, Hvals, Hdot= [], [], []
@@ -28,5 +28,3 @@ class EFT(object):
             H = math.sqrt(H2)
             anext = anext*(1 + H*self.dt)
         return avals, Hvals, Hdot
-
-
