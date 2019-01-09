@@ -1,5 +1,10 @@
 # UniverseModels
-Models to describe the evolution of the universe using EFT, dark energy and modified gravity theories.
+
+#### Katriona Goldmann
+
+These scripts were originally written as part of my MPhys project invesitgating the expansion and acceleration of the universe using effective field theory (EFT), dark energy and modified gravity theories.
+
+-----
 
 This repo contains four subfolders, containing generally one Python notebook (so in order to open it you will need to have iPython installed - see http://ipython.org/install.html for more detail) and necessary python scripts:
 
